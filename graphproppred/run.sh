@@ -17,4 +17,4 @@ cd /kaggle/working/ogb-base/
 git rebase
 git add .
 git commit -m "update"
-git push -f origin main
+git push origin main
