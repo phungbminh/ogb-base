@@ -11,7 +11,7 @@ echo on
 # Step 4: Commit và push các thay đổi
 
 
-git remote set-url origin https://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@github.com/phungbminh/ogb-base.git
+git remote set-url origin https://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@github.com/phungbminh/ogb-base.git
 
 cd /
 cd /kaggle/working/ogb-base/
