@@ -23,4 +23,4 @@ git config --global credential.https://github.com.password ghp_7CjTESoG0Sy0ndsXz
 #git remote set-url origin https://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@github.com/phungbminh/ogb-base.git
 git add .
 git commit -m "update"
-git push origin main
+git push -f origin main
