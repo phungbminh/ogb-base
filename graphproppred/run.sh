@@ -13,6 +13,9 @@ echo on
 
 git remote set-url origin https://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@github.com/phungbminh/ogb-base.git
 
-git add /kaggle/working/ogb-base/
-git commit -m "update" /kaggle/working/ogb-base
+cd /
+cd /kaggle/working/ogb-base/
+
+git add .
+git commit -m "update"
 git push origin main
