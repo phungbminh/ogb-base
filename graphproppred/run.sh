@@ -10,17 +10,10 @@ echo on
 
 # Step 4: Commit và push các thay đổi
 
-
-
 cd /
 cd /kaggle/working/ogb-base/
 
 
-git config --global credential.helper manager
-git config --global credential.https://github.com.username phungbminh@gmail.com
-git config --global credential.https://github.com.password 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
-
-#git remote set-url origin https://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@github.com/phungbminh/ogb-base.git
 git rebase
 git add .
 git commit -m "update"
