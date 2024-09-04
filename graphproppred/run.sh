@@ -13,7 +13,6 @@ echo on
 cd /
 cd /kaggle/working/ogb-base/
 
-
 git rebase
 git add .
 git commit -m "update"
