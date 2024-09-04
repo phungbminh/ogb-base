@@ -1,11 +1,6 @@
 #!/bin/bash
 echo on
-# Step 1: Cấu hình username và password
 
-git config --global user.name "phungbminh"
-git config --global user.email "phungbminh@gmail.com"
-# Lưu trữ mật khẩu một cách an toàn hơn (khuyến nghị)
-git config --global credential.helper store
 
 # Step 2: Cài đặt các thư viện cần thiết
 #pip install -r /kaggle/working/ogb-base/graphproppred/setup.txt
