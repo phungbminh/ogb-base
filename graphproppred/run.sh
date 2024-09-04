@@ -14,11 +14,10 @@ git config --global credential.helper store
 #python3 /kaggle/working/ogb-base/graphproppred/code2/main_pyg.py --gnn 'gin' --filename 'BestTrain' --epochs '10'
 
 # Step 4: Commit và push các thay đổi
-cd /
-cd /kaggle/working/ogb-base
+
 
 git remote set-url origin https://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@github.com/phungbminh/ogb-base.git
 
-git add .
-git commit -m "update"
+git add /kaggle/working/ogb-base/
+git commit -m "update" /kaggle/working/ogb-base
 git push origin main
