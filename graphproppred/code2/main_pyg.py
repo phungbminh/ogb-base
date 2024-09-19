@@ -236,7 +236,9 @@ def main():
     valid_curve = []
     test_curve = []
     train_curve = []
-
+    # Clear the contents of the file before starting the training  
+    with open(args.gnn + '_' + 'performance_log.txt', 'w') as f:  
+        f.write('')
     for epoch in range(1, args.epochs + 1):
         print("=====Epoch {}".format(epoch))
         print('Training...')
