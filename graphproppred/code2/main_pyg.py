@@ -266,6 +266,12 @@ def main():
     print('Best validation score: {}'.format(valid_curve[best_val_epoch]))
     print('Test score: {}'.format(test_curve[best_val_epoch]))
 
+    # Optionally, append the final results to the file  
+    with open(args.gnn + '_' + 'performance_log.txt', 'a') as f:  
+        f.write('Finished training!\n')  
+        f.write('Best validation score: {}\n'.format(valid_curve[best_val_epoch]))  
+        f.write('Test score: {}\n'.format(test_curve[best_val_epoch]))  
+
     if not args.filename == '':
         result_dict = {'Val': valid_curve[best_val_epoch], 'Test': test_curve[best_val_epoch], 'Train': train_curve[best_val_epoch], 'BestTrain': best_train}
         torch.save(result_dict,args.gnn + '_' +  args.filename)
