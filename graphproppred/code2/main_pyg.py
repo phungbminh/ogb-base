@@ -249,13 +249,12 @@ def main():
 
 
         print({'Train': train_perf, 'Validation': valid_perf, 'Test': test_perf})
-        performance_data = {'Train': train_perf, 'Validation': valid_perf, 'Test': test_perf}  
-        print(performance_data)  
+        performance_data = {'Train': train_perf, 'Validation': valid_perf, 'Test': test_perf}
+        print(performance_data)
     
         # Append performance data to a file  
         with open(args.gnn + '_' + 'performance_log.txt', 'a') as f:  
-        f.write(f"Epoch {epoch}: {performance_data}\n")  
-
+            f.write(f"Epoch {epoch}: {performance_data}\n")
         train_curve.append(train_perf[dataset.eval_metric])
         valid_curve.append(valid_perf[dataset.eval_metric])
         test_curve.append(test_perf[dataset.eval_metric])
